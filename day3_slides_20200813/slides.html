@@ -4,25 +4,25 @@
     <title>Automatic Reports with RMarkdown</title>
     <meta charset="utf-8" />
     <meta name="author" content="Keren Xu" />
-    <script src="libs/header-attrs-2.3/header-attrs.js"></script>
+    <script src="libs/header-attrs-2.14/header-attrs.js"></script>
     <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
     <link href="libs/remark-css-0.0.1/robot.css" rel="stylesheet" />
     <link href="libs/remark-css-0.0.1/robot-fonts.css" rel="stylesheet" />
-    <link href="libs/tile-view-0.0.20/tile-view.css" rel="stylesheet" />
-    <script src="libs/tile-view-0.0.20/tile-view.js"></script>
+    <link href="libs/tile-view-0.2.6/tile-view.css" rel="stylesheet" />
+    <script src="libs/tile-view-0.2.6/tile-view.js"></script>
     <script src="libs/xaringanExtra-webcam-0.0.1/webcam.js"></script>
     <script id="xaringanExtra-webcam-options" type="application/json">{"width":"300","height":"225","margin":"1em"}</script>
-    <link href="libs/panelset-0.0.20/panelset.css" rel="stylesheet" />
-    <script src="libs/panelset-0.0.20/panelset.js"></script>
-    <script src="libs/htmlwidgets-1.5.1/htmlwidgets.js"></script>
+    <link href="libs/panelset-0.2.6/panelset.css" rel="stylesheet" />
+    <script src="libs/panelset-0.2.6/panelset.js"></script>
+    <script src="libs/htmlwidgets-1.5.4/htmlwidgets.js"></script>
     <script src="libs/jquery-1.12.4/jquery.min.js"></script>
     <link href="libs/leaflet-1.3.1/leaflet.css" rel="stylesheet" />
     <script src="libs/leaflet-1.3.1/leaflet.js"></script>
     <link href="libs/leafletfix-1.0.0/leafletfix.css" rel="stylesheet" />
-    <script src="libs/Proj4Leaflet-1.0.1/proj4-compressed.js"></script>
+    <script src="libs/proj4-2.6.2/proj4.min.js"></script>
     <script src="libs/Proj4Leaflet-1.0.1/proj4leaflet.js"></script>
     <link href="libs/rstudio_leaflet-1.3.1/rstudio_leaflet.css" rel="stylesheet" />
-    <script src="libs/leaflet-binding-2.0.3/leaflet.js"></script>
+    <script src="libs/leaflet-binding-2.1.2/leaflet.js"></script>
   </head>
   <body>
     <textarea id="source">
@@ -524,8 +524,8 @@ leaflet() %&gt;%
              No, no one is here.") 
 ```
 
-<div id="htmlwidget-b7967143ba1ca4a0a60f" style="width:504px;height:504px;" class="leaflet html-widget"></div>
-<script type="application/json" data-for="htmlwidget-b7967143ba1ca4a0a60f">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addMarkers","args":[34.065764,-118.19698,null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},"Soto Street Building.<\/br>\n             No, no one is here.",null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"limits":{"lat":[34.065764,34.065764],"lng":[-118.19698,-118.19698]}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-27292a242f510f4eed66" style="width:504px;height:504px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-27292a242f510f4eed66">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addMarkers","args":[34.065764,-118.19698,null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},"Soto Street Building.<\/br>\n             No, no one is here.",null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"limits":{"lat":[34.065764,34.065764],"lng":[-118.19698,-118.19698]}},"evals":[],"jsHooks":[]}</script>
 
 ---
 
@@ -536,8 +536,8 @@ leaflet() %&gt;%
 ---
 # Rendered Output #2  
 
-<div id="htmlwidget-4a6bd81f203440d34a49" style="width:504px;height:504px;" class="leaflet html-widget"></div>
-<script type="application/json" data-for="htmlwidget-4a6bd81f203440d34a49">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addMarkers","args":[34.065764,-118.19698,null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},"Soto Street Building.<\/br>\n             No, no one is here.",null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"limits":{"lat":[34.065764,34.065764],"lng":[-118.19698,-118.19698]}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-c17aea264f12e37b65e5" style="width:504px;height:504px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-c17aea264f12e37b65e5">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addMarkers","args":[34.065764,-118.19698,null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},"Soto Street Building.<\/br>\n             No, no one is here.",null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"limits":{"lat":[34.065764,34.065764],"lng":[-118.19698,-118.19698]}},"evals":[],"jsHooks":[]}</script>
 
 ---
 # Code Chunk #3     
@@ -579,8 +579,8 @@ leaflet() %&gt;%
              No, no one is here.") 
 ```
 
-<div id="htmlwidget-76ebadb50ea7173f259e" style="width:40%;height:40%;" class="leaflet html-widget"></div>
-<script type="application/json" data-for="htmlwidget-76ebadb50ea7173f259e">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addMarkers","args":[34.065764,-118.19698,null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},"Soto Street Building.<\/br>\n             No, no one is here.",null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"limits":{"lat":[34.065764,34.065764],"lng":[-118.19698,-118.19698]}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-ccac21bccab857777b47" style="width:40%;height:40%;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-ccac21bccab857777b47">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addMarkers","args":[34.065764,-118.19698,null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},"Soto Street Building.<\/br>\n             No, no one is here.",null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"limits":{"lat":[34.065764,34.065764],"lng":[-118.19698,-118.19698]}},"evals":[],"jsHooks":[]}</script>
 
 ---
 # Other language engines   
@@ -593,10 +593,12 @@ names(knitr::knit_engines$get())
 ##  [1] "awk"       "bash"      "coffee"    "gawk"      "groovy"    "haskell"  
 ##  [7] "lein"      "mysql"     "node"      "octave"    "perl"      "psql"     
 ## [13] "Rscript"   "ruby"      "sas"       "scala"     "sed"       "sh"       
-## [19] "stata"     "zsh"       "highlight" "Rcpp"      "tikz"      "dot"      
-## [25] "c"         "cc"        "fortran"   "fortran95" "asy"       "cat"      
-## [31] "asis"      "stan"      "block"     "block2"    "js"        "css"      
-## [37] "sql"       "go"        "python"    "julia"     "sass"      "scss"
+## [19] "stata"     "zsh"       "asis"      "asy"       "block"     "block2"   
+## [25] "bslib"     "c"         "cat"       "cc"        "comment"   "css"      
+## [31] "ditaa"     "dot"       "embed"     "exec"      "fortran"   "fortran95"
+## [37] "go"        "highlight" "js"        "julia"     "python"    "R"        
+## [43] "Rcpp"      "sass"      "scss"      "sql"       "stan"      "targets"  
+## [49] "tikz"      "verbatim"  "glue"      "glue_sql"  "gluesql"
 ```
 
 
@@ -608,16 +610,6 @@ names(knitr::knit_engines$get())
 
 .pull-right[
 ### Rendered output  
-
-```python
-x = 'hello, python world!'
-print(x.split(' '))
-```
-
-```
-## ['hello,', 'python', 'world!']
-```
-
 
 ```bash
 echo "Hello Bash!"
@@ -694,7 +686,7 @@ Github: https://github.com/yihui/xaringan
 remotes::install_github('yihui/xaringan')
 ```
 
-&lt;iframe src="https://slides.yihui.org/xaringan/#1" width="80%" height="400px"&gt;&lt;/iframe&gt;
+&lt;iframe src="https://slides.yihui.org/xaringan/#1" width="80%" height="400px" data-external="1"&gt;&lt;/iframe&gt;
 
 ]
 
@@ -775,6 +767,8 @@ Generate `static` websites based on `R Markdown` and `Hugo`.
 - R Markdown Cheat Sheet [[link](https://github.com/rstudio/cheatsheets/raw/master/rmarkdown-2.0.pdf)]
 
 - Markdown Cheat Sheet [[link](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)]
+
+- R Markdown 10-minute tutorial [[link](https://commonmark.org/help/tutorial)]
 ---
 
 class: center, middle, inverse  
@@ -833,6 +827,19 @@ if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
     deleted = true;
   });
 })();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
 (function() {
   "use strict"
   // Replace <script> tags in slides area to make them executable

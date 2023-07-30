@@ -624,11 +624,6 @@ knitr::include_graphics("engine.png")
 
 .pull-right[
 ### Rendered output  
-```{python, engine.path = 'C:/Users/xuker/Anaconda3/'}
-x = 'hello, python world!'
-print(x.split(' '))
-```
-
 ```{bash}
 echo "Hello Bash!"
 ```
